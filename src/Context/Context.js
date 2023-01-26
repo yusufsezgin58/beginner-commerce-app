@@ -8,7 +8,7 @@ export const ThemeProvider = ({children}) => {
 
     const [names, setNames] = useState(VALUES)
     const [name, setName] = useState('')
-    const [price, setPrice] = useState()
+    const [price, setPrice] = useState('')
     const [describe, setDescribe] = useState('')
 
     const data = {

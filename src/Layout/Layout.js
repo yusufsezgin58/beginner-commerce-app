@@ -14,8 +14,8 @@ function Layout() {
                 </div>
                 <div className="links">
                     <ul>
-                        <li><Link className="text-dark rounded text-decoration-none fs-5" to='/add'>ADMIN</Link></li>
-                        <li><Link className="text-dark text-decoration-none fs-5" to='/show'>PRODUCTS</Link></li>
+                        <li><Link className="btn btn-light px-3 py-2" to='/add'>ADMIN</Link></li>
+                        <li><Link className="btn btn-light px-3 py-2" to='/show'>PRODUCTS</Link></li>
                     </ul>
                 </div>
             </div>

@@ -12,23 +12,27 @@
     justify-content: space-between;
     align-items: center;
     background-color: rgb(45, 44, 44);
-    padding: 15px;
+    padding-left: 2%;
+    padding-right: 2.3%;
 }
 
 .links li{
-    padding: 10px;
-    padding-inline: 18px;
-    margin: 10px;
+    margin: 12px;
     background-color: white;
+    align-items: center;
+    margin-top: 30px;
     border-radius: 8px;
-}
-
-.links li:hover {
-    opacity: 0.7;
+    font-weight: 400;
 }
 
 .links ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.header img {
+    margin-left: 10px;
+    height: 60px;
+    width: 60px;
 }
