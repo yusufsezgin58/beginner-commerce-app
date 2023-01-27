@@ -6,14 +6,20 @@ import product from '../img/depositphotos_318221368-stock-illustration-missing-p
 
 function Add() {
 
-    const { names, setNames, name, setName, price, setPrice, describe, setDescribe } = useContext(ThemeContext)
+    const { names, setNames, name, setName, price, setPrice, describe, setDescribe, address, setAddress } = useContext(ThemeContext)
     return (
         <div className="Admin">
-            <p>Add Product</p>
-            <input className="form-control" value={name} type='text' placeholder="Type product name" onChange={(e) => { setName(e.target.value) }} />
-            <input className="form-control" value={price} type="text" placeholder="Type price value" onChange={(e) => { setPrice(e.target.value) }} />
-            <select class="form-select" onChange={(e) => {setDescribe(e.target.value)}} id="inputGroupSelect01">
-                <option selected>Choose...</option>
+            <h3>Add Product</h3> <hr />
+            <label className="fs-6">Product Name</label>
+            <input required className="form-control" value={name} type='text' placeholder="Pencil" onChange={(e) => { setName(e.target.value) }} /> <br />
+            <label className="fs-6">Price</label>
+            <input required className="form-control" value={price} type="text" placeholder="100" onChange={(e) => { setPrice(e.target.value) }} /> <br />
+            <label className="fs-6">Address</label>
+            <textarea value={address} type="text" onChange={(e) => {setAddress(e.target.value)}} className="form-control" placeholder="Los angeles, California"></textarea>
+            <br />
+            <label className="fs-6">Category</label>
+            <select required className="form-select" onChange={(e) => {setDescribe(e.target.value)}} id="inputGroupSelect01">
+                <option>Choose...</option>
                 <option value="Technology">Technology</option>
                 <option value="Fashion">Fashion</option>
                 <option value="Home, live, office">Home, live, office</option>
@@ -24,7 +30,7 @@ function Add() {
                 <option value="Supermarket, pet shop">Supermarket, pet shop</option>
                 <option value="Book, music, film, hobby">Book, music, film, hobby</option>
             </select>
-            <button className="btn btn-primary" type="click" onClick={() => setNames([...names, { productName: name, priceValue: price, describeText: describe }])}>ADD</button>
+            <button className="btn btn-primary" type="button" onClick={() => setNames([...names, { productName: name, priceValue: price, describeText: describe, addressText : address}])}>ADD</button>
         </div>
     )
 }

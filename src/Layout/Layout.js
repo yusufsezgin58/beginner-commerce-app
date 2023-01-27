@@ -16,10 +16,12 @@ function Layout() {
                     <ul>
                         <li><Link className="btn btn-light px-3 py-2" to='/add'>ADMIN</Link></li>
                         <li><Link className="btn btn-light px-3 py-2" to='/show'>PRODUCTS</Link></li>
+                        <li><Link to='/box' className="btn btn-light px-3 py-2">BOX</Link></li>
                     </ul>
                 </div>
             </div>
 
+            <div className="text bg-success"><span>This project developed by </span><a href="https://github.com/yusufsezgin58" target='_blank'>Yusuf Sezgin</a></div>
             <Outlet />
         </header>
     )

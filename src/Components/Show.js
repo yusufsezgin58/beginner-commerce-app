@@ -5,7 +5,7 @@ import product from '../img/depositphotos_318221368-stock-illustration-missing-p
 
 function Show() {
 
-    const { names, setNames, VALUES } = useContext(ThemeContext)
+    const { names, setNames, VALUES, boxitems, setBoxitems } = useContext(ThemeContext)
 
     return (
         <div className="cards">
@@ -16,7 +16,8 @@ function Show() {
                             <img src={product} alt="product" />
                             <h3 className="bg-success text-white py-1 align-items-center rounded text-center">{item.productName}</h3>
                             <h5 className="bg-info rounded text-white py-1 px-2">{item.priceValue}$ / {item.describeText}</h5>
-                            <button type="button" class="btn btn-warning">Add box</button>
+                            <h6 className="bg-info text-white py-1 align-items-left rounded text-left">{item.addressText}</h6>
+                            <button type="button" className="btn btn-warning" onClick={(e) => setBoxitems([...boxitems, {item : item.productName}])}>Add box</button>
                         </div>
                     )
                 })

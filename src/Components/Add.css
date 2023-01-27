@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: start;
     width: 25%;
-    margin-top: 3%;
+    margin-top: 2%;
     margin-left: 2%;
 }
 
@@ -24,7 +24,6 @@
 }
 
 p {
-    font-size: 24px;
     font-weight: 400;
     font-display:inherit;
 }

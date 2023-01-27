@@ -1,0 +1,39 @@
+.Box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 2%;
+}
+
+.item {
+    list-style-type: none;
+    background-color: rgb(45, 42,44);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-block: 5px;
+}
+
+.items {
+    max-height: 380px;
+    overflow-y: scroll;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item button {
+    margin-inline: 5px;
+}
+.disabled {
+    display: none;
+    transition: 0.7s;
+}

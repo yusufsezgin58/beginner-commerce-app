@@ -22,7 +22,7 @@
     align-items: center;
     margin-top: 30px;
     border-radius: 8px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .links ul{
@@ -35,4 +35,21 @@
     margin-left: 10px;
     height: 60px;
     width: 60px;
+}
+
+.text {
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+.text span{
+    font-size: 20px; 
+}
+
+.text a {
+    font-size: 20px;
+    color: white;
+
 }
