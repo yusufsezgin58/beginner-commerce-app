@@ -26,10 +26,15 @@
 
 .card h6 {
     padding-left: 3%;
+    margin-top: 5%;
 }
 
 .card p {
     float: right;
     margin-left: 60%;
     
+}
+
+.card button {
+    margin-top: 5%;
 }

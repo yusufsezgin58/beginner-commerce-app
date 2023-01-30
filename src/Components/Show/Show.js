@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
-import ThemeContext from "../Context/Context";
+import ThemeContext from "../../Context/Context";
 import './Show.css'
-import product from '../img/depositphotos_318221368-stock-illustration-missing-picture-page-for-website.png'
+import product from '../../img/depositphotos_318221368-stock-illustration-missing-picture-page-for-website.png'
 
 function Show() {
 
