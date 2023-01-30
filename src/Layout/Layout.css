@@ -1,7 +1,6 @@
 .all {
     width: 100%;
     height: 41.05rem;
-    background-color: white;
     margin: 0px;
     padding: 0px;
 }
@@ -16,13 +15,14 @@
     padding-right: 2.3%;
 }
 
-.links li{
+.links Button{
     margin: 12px;
-    background-color: white;
+    background: none;
     align-items: center;
     margin-top: 30px;
     border-radius: 8px;
     font-weight: 500;
+    background-color: teal;
 }
 
 .links ul{

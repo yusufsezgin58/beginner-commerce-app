@@ -5,11 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ThemeProvider from './Context/Context.js'
 import ThemeContext from './Context/Context.js';
+import { ChakraProvider } from '@chakra-ui/react'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <App />
+        <ChakraProvider>
+            <App />
+        </ChakraProvider>
     </React.StrictMode>
 );
 

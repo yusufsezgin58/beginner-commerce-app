@@ -2,6 +2,7 @@ import React from "react";
 import { Link, Outlet } from 'react-router-dom'
 import './Layout.css'
 import github from '../img/icons8-github-100.png'
+import { Button, ButtonGroup } from '@chakra-ui/react'
 
 function Layout() {
     return (
@@ -14,9 +15,10 @@ function Layout() {
                 </div>
                 <div className="links">
                     <ul>
-                        <li><Link className="btn btn-light px-3 py-2" to='/add'>ADMIN</Link></li>
-                        <li><Link className="btn btn-light px-3 py-2" to='/show'>PRODUCTS</Link></li>
-                        <li><Link to='/box' className="btn btn-light px-3 py-2">BOX</Link></li>
+
+                        <Button colorScheme='teal' className="button"><Link className="px-3 py-2" to='/add'>Admin</Link></Button>
+                        <Button colorScheme="teal" className="button"><Link className="px-3 py-2" to='/show'>Products</Link></Button>
+                        <Button colorScheme="teal" className="button"><Link to='/box' className="px-3 py-2">BOX</Link></Button>
                     </ul>
                 </div>
             </div>

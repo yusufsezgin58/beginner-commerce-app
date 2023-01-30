@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import ThemeContext from "../Context/Context";
+import ThemeContext from "../../Context/Context";
 import './Box.css'
 
 function Box() {
